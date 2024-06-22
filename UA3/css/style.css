@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap%22");
+/*change la police*/
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+/* header*/
+/*chaue la couleur du fond du header et du footer*/
+
+@media (max-width: 333px) {
+    /* … */
+
+    *{
+        color: red;
+    }
+  }
+header,footer{
+    background-color: rgba(2, 38, 59, 0.727);
+}
+
+/*chaque text contenu dans le h1 du header va commencer a gauche*/
+header h1{
+    text-align: start;
+}
+
+/*donne une couleur blanche aux liens*/
+ a {
+    color: white;
+    text-decoration: none;
+}
+/*donne une couleur rouge aux liens quand le curseur passe dessus*/
+a:hover{
+    color: red;
+}
+
+/*permet de faire disparaitre les marker ensuite les aligner horizontalement
+mettre de l'espace entre les elements */
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around ;
+  
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 20px;
+
+}
+
+
+/*section 1 */
+
+/*change la couleur de fond et ajoute de l'espace au element avec cette classe*/
+.first-section {
+    background-color: rgba(2, 38, 59, 0.727);
+    padding: 30px;
+
+}
+/*ajoute du style a chaque lien contenu dans la classe forst-section*/
+
+.first-section a{
+    color: white;
+    text-decoration: none;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#email-
+
+/*section2*/
+
+/*permet d'enlever le bordure autour des images */
+.card {
+    border: none;
+}
+
+    /*rend  l'element avec cette classe blanc*/
+    .blanc {
+        color: white;
+    }
+    
+     /*rend  l'element avec cette classe vert*/
+    .vert {
+        color: rgb(113, 189, 152) 
+    }
+
+    /*change la couleur de l'element ayant cette classe en rouge quand la
+    souris passe dessus*/
+    .rouge:hover{
+        color: red;
+    }
+
+    /*ajoute de l'espace autour des elements contenu dans la classe info*/
+    .info{
+        padding: 80px;
+    }
+    /*rend la couleurs des lien contenu dans la classe info*/
+    .info a {
+        color: black;
+    }
+    
+    /*arrondi les bouts de elements avec cette classe*/
+    .photo{
+        border-radius: 5px;
+    }
+    
+    
+
+
+/*Conferencier*/
+
+.conference-info{
+    padding: 30px;
+}
+/* sert a changer le couleur de fond des section 1 de chaque page sauf la 1ere*/
+.degrade{
+    background: linear-gradient(to right,rgba(0, 255, 136, 0.604), rgb(255, 243, 192));
+    padding: 20px;
+}
+
+
+/* sert a retrecir l'image et a pouusser l'image de 50px vers le bas et aussi a bien le placer*/
+.image-container img{
+    margin-bottom: -50px; 
+    width:120px; 
+    margin-left:100px;
+    border-radius: 50%;
+}
+
+/* sert a ajouter des boudures a l'element de texte, change sa couleur et lui ajoute du padding*/
+.conferencier{
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+     padding-top: 80px; 
+     padding-left:80px; 
+     padding-right:80px;
+      padding-bottom:5px;
+    
+}
+
+/* change les couleurs des liens presentes dans la classe conferencier */
+.conferencier a {
+    color: rgb(113, 189, 152) 
+} 
+/*padding sur la 2eme section de la page conferencier*/
+.conference-info{
+    padding: 30px;
+}
+
+/*enleve les styles sur les listes*/
+.image-container ul{
+    list-style: none;
+    width: 300px;
+}
+/*Ajoute du padding a la classe main de la page conferencier*/
+.main{
+    padding: 60px 0px;
+}
+/*Ajoute du padding aux section contenu dans la classe main de la page conferencier*/
+.main section{
+    padding: 30px;
+}
+
+
+/*Programme*/
+/*sert a mettre du bordure en dessous de chaque element xcontenu dans un td et a ajouter de l'espace autour de l'element*/
+td{
+    border-bottom: 1px solid;
+    padding:15px
+}
+
+/* mettre de l'espace superieur sur les tables*/
+table{
+    margin-top: 30px;
+}
+/*chaque lien presnet dans les tables sront noirs*/
+table a{
+    color:black
+}
+/*sert a indiquer que la classe espace doit utiliser juste 60% de son territoire et margin:auto c'est pour centrer*/
+.espace{
+    width: 60%;
+     margin:auto
+}
+
+/*Venue*/
+
+/*chaque lein contenue dans le classe direction prend la couleur ci-dessous*/
+.direction a{
+    color: rgb(113, 189, 152) ;
+  
+}
+
+/* retreci la carte en ajoutant de l'espace autour*/
+iframe{
+    padding: 30px;
+    
+}
+
+
+
+
+/* Inscription*/
+
+/*ajouter autour de tout les elements avec la classe info-inscription*/
+.info-inscription{
+    padding: 50px;
+}
+/*utilise flexbox pour aligner verticalement les elements contenu dans une balise avec la classe formulaire
+ensuite ajouter de l'espace en hautg en bas de ces elements*/
+.formulaire {
+    display: flex;
+    flex-direction: column;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     margin-left: 0;
+     margin-right: 0;
+}
+
+/*Tous les inputs et les textarea vont avoir les extremites arrondi*/
+input, textarea{
+    border-radius: 5px;
+}
+
+/*change la couleur de fond, la couleur du texte, et ajpouter de l'espace autour puis rend le texte foncer*/
+.button-acheter{
+    background-color: rgb(113, 189, 152);
+    color:white;
+    padding: 8px 30px;
+    font-weight: bold;
+}
+
+/*Quand on montre sur l'element ayant la classe button-acheter la couleur change en rouge*/
+.button-acheter:hover{
+    color: red;
+}
+
+/*sert a changer la longueuer et la largeur et aussi la forme des extremiters de n'importe qu'elle element ayant la classe select */
+.select{
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+/* permet de changer le marker du cercle par defaut en carre*/
+.carre{
+    list-style-type: square;
+}

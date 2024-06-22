@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Evaluation03</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/modal.css">
+  
+</head>
+
+<body>
+
+  <header>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-5 offset-1">
+          <h1 class="h1">
+            <a href="/index .html">
+              NOUVELLE <br />
+              CONFERENCE
+            </a>
+          </h1>
+        </div>
+
+        <div class="col-6">
+          <h3 class="vert">24&ndash;25 mars 2024 &mdash; Ottawa, ON</h3>
+          <div class="row">
+            <div class="col">
+              <nav>
+                <ul class="navigation">
+                  <li><a href="../index .html ">Accueil</a>
+                  </li>
+               
+                  <!--
+                          -->
+                  <li><a href="/html/register.html">Inscription
+                    </a> </li>
+
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <section class="degrade">
+    <div class="container text-center ">
+      <div class="row">
+        <div class="col conference-info">
+
+          <div>
+            <h1>Inscription</h1>
+
+            <p>
+              Fusce tempus vitae lorem mollis varius. Curabitur ultricies nisl
+              sollicitudin nulla blandit consequat. Aliquam eu metus purus.
+              Pellentesque consectetur, diam et dictum commodo, neque dolor aliquam
+              mi, quis ultrices quam nibh sit amet sem.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  </section>
+
+  <section class="info-inscription">
+    <div class="container text-start">
+      <div class="row">
+        <div class="col-9">
+          <h2>Achat de passe pour la conférence</h2>
+          <h5>99$ / place</h5>
+
+          <p>
+            In gravida fringilla fringilla. Ut at mi massa. Curabitur sed
+            rhoncus orci, sed pulvinar lectus. Praesent tempor nisi id facilisis
+            congue. Nullam eu convallis turpis, vel mattis turpis. In cursus,
+            augue in feugiat posuere, tortor velit congue mi, at volutpat nibh
+            turpis a tellus.
+          </p>
+
+          <h4>Bienvenue !</h4>
+
+          <ul class="liste">
+            <li>Cras eu est sit amet elit placerat venenatis.</li>
+            <li>Proin bibendum justo vestibulum accumsan rhoncus.</li>
+            <li>Pellentesque gravida risus id eros aliquet tempor.</li>
+            <li>Sed in odio at dolor posuere laoreet.</li>
+            <li>Nullam fermentum leo at dignissim varius.</li>
+          </ul>
+        </div>
+        <div class="col">
+          <form id="forme">
+            <fieldset>
+                <label id="civilite">Civilité:</label> <span id="civilite_erreur" class="span-rouge"></span><br>
+                <input type="radio" id="mademoiselle" name="civilite" value="Mademoiselle">
+                <label for="mademoiselle">Mademoiselle</label>
+                <input type="radio" id="madame" name="civilite" value="Madame">
+                <label for="madame">Madame</label>
+                <input type="radio" id="monsieur" name="civilite" value="Monsieur">
+                <label for="monsieur">Monsieur</label><br>
+               
+        
+                <label id="genres">Genre:</label> <span id="genre_erreur" class="span-rouge"></span> <br>
+                <input type="checkbox" id="homme" name="genre" value="Homme">
+                <label for="homme">Homme</label>
+                <input type="checkbox" id="femme" name="genre" value="Femme">
+                <label for="femme">Femme</label>
+                <input type="checkbox" id="autre" name="genre" value="Autre">
+                <label for="autre">Autre</label>
+                <span id="genre_erreur"></span>
+         
+                <label for="nom" class="formulaire">
+                    Nom
+                    <input id="nom" type="text" placeholder="Nom complet" />
+                    <span class="span-rouge" id="nom_erreur"></span>
+                </label>
+        
+                <label for="courriel" class="formulaire">
+                    Courriel
+                    <input type="email" id="courriel" placeholder="Enter email" />
+                    <span class="span-rouge" id="email_erreur"></span>
+                </label>
+                <label for="telephone" class="formulaire">
+                    Telephone
+                    <input type="tel" placeholder="Numero de telephone" id="telephone" />
+                    <span id="numero_erreur" class="span-rouge"></span>
+                </label>
+        
+                <label class="formulaire">
+                    Nombre de places
+                    <select name="quantity" id="choix" class="select">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </label>
+        
+                <label class="formulaire">
+                    Commentaire
+                    <textarea id="commentaires"></textarea>
+                    <span class="span-rouge" id="comments_erreur"></span>
+                </label>
+            </fieldset>
+            <button id="acheterBtn" class="button-acheter" type="submit">ACHETER</button>
+        </form>
+        
+        <!-- Le modal -->
+        <div class="modal" id="monModal">
+            <div class="modal-content">
+                <button class="close-btn " id="fermeModalBtn">Fermer</button>
+                <p id="paragraphe" ></p>
+            </div>
+        </div>
+        
+        
+         
+
+
+
+
+        </div>
+
+      </div>
+
+
+  </section>
+
+
+  <footer>
+    <div class="container ">
+      <div class="row align-items-end">
+
+        <div class="col ">
+          <small class="vert">Nouvelle Conférence</small>
+        </div>
+
+        <div class="col">
+          <nav>
+            <ul class="navigation">
+              <li><a href="/index .html">Accueil
+                </a> </li>
+              <!--
+                      -->
+              <li><a href="/html/speakers.html">Conférenciers
+                </a> </li>
+              <!--
+                      -->
+              <li><a href="/html/schedule.html">Programme
+                </a> </li>
+              <!--
+                      -->
+              <li><a href="/html/venue.html">Venue
+                </a> </li>
+              <!--
+                      -->
+              <li><a href="/html/register.html">Inscription
+                </a> </li>
+            </ul>
+          </nav>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"> </script>
+    <script defer src="../js/main.js"></script>
+</body>
+
+</html>
